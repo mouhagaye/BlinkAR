@@ -35,6 +35,10 @@ def create_app():
     return app
 
 app = create_app()
+@app.route("/static/<path:path>")
+def static_dir(path):
+    return send_from_directory("static", path)
+
 
 
 video_capture = cv2.VideoCapture(0)
@@ -190,6 +194,10 @@ def stream():
     """Video streaming home page."""
     contexte = {"image":"gaye.jpg"}
     return render_template('stream.html',contexte=contexte)
+
+
+
+app.config["CACHE_TYPE"] = "null"
 
 
 if __name__ == '__main__':
