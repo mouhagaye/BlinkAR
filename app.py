@@ -51,14 +51,14 @@ abdallah_face_encoding = face_recognition.face_encodings(abdallah_image)[0]
 gaye_image = face_recognition.load_image_file("gaye.jpg")
 gaye_face_encoding = face_recognition.face_encodings(gaye_image)[0]
 
-cima_image = face_recognition.load_image_file("cima.jpg")
-cima_face_encoding = face_recognition.face_encodings(cima_image)[0]
+oury_image = face_recognition.load_image_file("oury.jpg")
+oury_face_encoding = face_recognition.face_encodings(oury_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
     abdallah_face_encoding,
     gaye_face_encoding,
-    cima_face_encoding,
+    oury_face_encoding,
 
 ]
 
@@ -71,12 +71,12 @@ taggroupe = 'GROUPE :'
 known_face_names = [
     'Abdou Lahi Diop',
     'Mouhamadou Gaye',
-    "Mamadou Ciss"
+    "Oury Diallo"
 ]
 ages = [
     "23 ans",
     "23 ans",
-    "19 ans"
+    "28 ans"
 ]
 sexes = [
     "masculin",
@@ -87,6 +87,11 @@ groupes = [
     'O+',
     'O-',
     'AB-'
+]
+radios = [
+    'abdallah_radio.jpg',
+    'gaye_radio.jpg',
+    'oury_radio.jpg'
 ]
 # Initialize some variables
 # face_locations = []
@@ -103,12 +108,21 @@ def gen_frames():  # generate frame by frame from camera
     face_encodings = []
     face_names = []
     process_this_frame = True
+    foreground = np.ones((100,100,3),dtype='uint8')*255
+    alpha = 0.4
+    # image = cv2.imread('0.jpg')
+    # image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    # image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+
+
     while True:
         # Capture frame-by-frame
         success, frame = video_capture.read()  # read the camera frame
         if not success:
             break
         else:
+
             # Grab a single frame of video
             ret, frame = video_capture.read()
 
@@ -161,16 +175,25 @@ def gen_frames():  # generate frame by frame from camera
                         age = ages[i]
                         sexe = sexes[i]
                         groupe = groupes[i]
+                        radio = radios[i]
 
 
                 # Draw a label with a name below the face
                 cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
                 font = cv2.FONT_HERSHEY_DUPLEX
-                cv2.putText(frame, tagname+name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
+                cv2.putText(frame, tagname+name, (left + 6, bottom - 6), font, 0.5, (255, 255, 255), 1)
+                image_2 = cv2.imread(radio)
                 if name != 'Unknown':
-                    cv2.putText(frame, tagage+age, (left + 6, bottom + 50), font, 1.0, (255, 255, 255), 1)
-                    cv2.putText(frame, tagsexe+sexe, (left + 6, bottom + 100), font, 1.0, (255, 255, 255), 1)
-                    cv2.putText(frame, taggroupe+groupe, (left + 6, bottom + 150), font, 1.0, (255, 255, 255), 1)
+                    cv2.putText(frame, tagage+age, (left + 6, bottom + 25), font, 0.5, (255, 255, 255), 1)
+                    cv2.putText(frame, tagsexe+sexe, (left + 6, bottom + 50), font, 0.5, (255, 255, 255), 1)
+                    cv2.putText(frame, taggroupe+groupe, (left + 6, bottom + 75), font, 0.5, (255, 255, 255), 1)
+                    resized_image_2 = cv2.resize(image_2, dsize=(100, 100))
+                    frame[50:150, 50:150] = resized_image_2
+
+
+
+                
+
 
 
             ret, buffer = cv2.imencode('.jpg', frame)

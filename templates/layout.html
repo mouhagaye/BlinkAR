@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>HealthcAR Bootstrap Template - Index</title>
+  <title>HealthcAR Page d'accueil</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -43,9 +43,9 @@
   <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
-        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="icofont-phone"></i> +1 5589 55488 55
-        <i class="icofont-google-map"></i> A108 Adam Street, NY
+        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">healthcar@blinkar.sn</a>
+        <i class="icofont-phone"></i> +221 33 896 03 03
+        <i class="icofont-google-map"></i> Cité Keur Gorgui, Rue 9, Dakar
       </div>
       <div class="social-links">
         <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
@@ -67,13 +67,15 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="{{url_for('index')}}">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#departments">Departments</a></li>
-          <li><a href="#doctors">Doctors</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
+          <li class="active"><a href="{{url_for('index')}}">Accueil</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#services">Offres et Services</a></li>
+          <li><a href="#departments">Départements</a></li>
+          <li><a href="#doctors">Médecins</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+          <!-- <li class="drop-down"><a href="">Drop Down</a> -->
+            <!-- <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Deep Drop Down</a>
                 <ul>
@@ -87,14 +89,13 @@
               <li><a href="#">Drop Down 2</a></li>
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+            </ul> -->
+          <!-- </li> -->
 
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#appointment" class="appointment-btn scrollto">Make an Appointment</a>
+      <a href="#appointment" class="appointment-btn scrollto">Prendre rendez-vous</a>
 
     </div>
   </header><!-- End Header -->
@@ -114,7 +115,9 @@
             <div class="content">
               <h3>Pourquoi choisir HealthcAR?</h3>
               <p>
-                A l'ere des nouvelles technologie Healthcare offre une solution efficace pour faciliter et accelerer la consultation des patients par les medecins
+               A l'orée de la quatrième révolution industrielle, il incombe à toute structure, qu'elle soit étatique, privée comme organisationnelle, de revoir sa posture pour pouvoir 
+               ainsi s'adapter face à cette avancée fulgurante. C'est dans ce contexte que BlinkAR propose aux structures sanitaires une rénovation tant dans la manière d'ausculter les 
+               patients que dans celle d'archiver leurs antécédents médicaux.   
               </p>
               <div class="text-center">
                 <a href="#" class="more-btn">En savoir plus <i class="bx bx-chevron-right"></i></a>
@@ -127,22 +130,24 @@
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-receipt"></i>
-                    <h4></h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    <h4>Rapidité</h4>
+                    <p>La connaissance des antécédents d'oscultation permet une meilleure vue panoramique de l'état de santé du patient ainsi qu'une réduction
+                      notable du temps de recherche.
+                    </p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-cube-alt"></i>
-                    <h4>Ullamco laboris ladore pan</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <h4>Réduction des files d'attente</h4>
+                    <p>Notre solution permet d'optimiser le temps en réduisant considérablement le temps d'attente.</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-images"></i>
-                    <h4>Labore consequatur</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <h4>Réduction  de la paperasse</h4>
+                    <p>Elle apporte aussi sa contribution à la numérisation des données des structures hospitalières.</p>
                   </div>
                 </div>
               </div>
@@ -163,25 +168,31 @@
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+            <h3>L'impact des nouvelles technologies sur la santé.</h3>
+            <p>Dans cette vidéo, le Docteur Sylla, proprietaire de la Clinique Coumba Cissé, spécialiste en chirurgie plastique, nous fait part de
+              son ressenti face à l'expérience inédite qu'il a vécue lors de notre collaboration.
+            </p>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4 class="title"><a href="">La sécurisation de nos données.</a></h4>
+              <p class="description">Nous avons travaillé en collaboration avec la CDP pour la mise en place d'un prototype qui respecte les exigences 
+                de la protection des données personnelles.
+              </p>
             </div>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <h4 class="title"><a href="">L'accessibilité de nos offres</a></h4>
+              <p class="description">Nos offres allient accessibilité et performance dans la mesure où elles peuvent être utilisées par les matériels
+                des plus basiques aux plus performants.
+              </p>
             </div>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-atom"></i></div>
-              <h4 class="title"><a href="">Dine Pad</a></h4>
-              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+              <h4 class="title"><a href="">Pluridisciplinarité de notre équipe</a></h4>
+              <p class="description">Notre équipe à la fois pluridisciplinaire et synergique permet de vous offrir des produits couvrant plusieurs domaines.</p>
             </div>
 
           </div>
@@ -200,7 +211,7 @@
             <div class="count-box">
               <i class="icofont-doctor-alt"></i>
               <span data-toggle="counter-up">85</span>
-              <p>Doctors</p>
+              <p>Partenaires</p>
             </div>
           </div>
 
@@ -208,7 +219,7 @@
             <div class="count-box">
               <i class="icofont-patient-bed"></i>
               <span data-toggle="counter-up">18</span>
-              <p>Departments</p>
+              <p>Départements couverts</p>
             </div>
           </div>
 
@@ -216,7 +227,7 @@
             <div class="count-box">
               <i class="icofont-laboratory"></i>
               <span data-toggle="counter-up">8</span>
-              <p>Research Labs</p>
+              <p>Innovation labs</p>
             </div>
           </div>
 
@@ -224,7 +235,7 @@
             <div class="count-box">
               <i class="icofont-award"></i>
               <span data-toggle="counter-up">150</span>
-              <p>Awards</p>
+              <p>Produits délivrés</p>
             </div>
           </div>
 
@@ -234,12 +245,12 @@
     </section><!-- End Counts Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
+    <!-- <section id="services" class="services"> -->
+      <!-- <div class="container">
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Nous vous offrons des produits sur mesure et qui vous satisfont car ayant recours à la méthode agile.</p>
         </div>
 
         <div class="row">
@@ -293,41 +304,43 @@
 
         </div>
 
-      </div>
-    </section><!-- End Services Section -->
+      </div> -->
+    <!-- </section>End Services Section -->
 
     <!-- ======= Appointment Section ======= -->
     <section id="appointment" class="appointment section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Make an Appointment</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Prendre rendez-vous</h2>
+          <p>Pour prendre un rendez-vous avec un médecin, veuillez consigner les informatios afférentes dans les champs ci-après.
+            NB: Veuillez prendre rendez-vous au moins 24h à l'avance!
+          </p>
         </div>
 
         <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
           <div class="form-row">
             <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Mail" data-rule="email" data-msg="Please enter a valid email">
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Numéro de téléphone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
           </div>
           <div class="form-row">
             <div class="col-md-4 form-group">
-              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Date de rendez-vous" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
               <select name="department" id="department" class="form-control">
-                <option value="">Select Department</option>
+                <option value="">Sélection du département Department</option>
                 <option value="Department 1">Department 1</option>
                 <option value="Department 2">Department 2</option>
                 <option value="Department 3">Department 3</option>
@@ -336,7 +349,7 @@
             </div>
             <div class="col-md-4 form-group">
               <select name="doctor" id="doctor" class="form-control">
-                <option value="">Select Doctor</option>
+                <option value="">Sélection du médecin</option>
                 <option value="Doctor 1">Doctor 1</option>
                 <option value="Doctor 2">Doctor 2</option>
                 <option value="Doctor 3">Doctor 3</option>
@@ -350,11 +363,11 @@
             <div class="validate"></div>
           </div>
           <div class="mb-3">
-            <div class="loading">Loading</div>
+            <div class="loading">Chargement</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+            <div class="sent-message">Votre requête est en cours de traitement.Merci!</div>
           </div>
-          <div class="text-center"><button type="submit">Make an Appointment</button></div>
+          <div class="text-center"><button type="submit">Prendre rendez-vous</button></div>
         </form>
 
       </div>
@@ -365,27 +378,27 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Departments</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Departements</h2>
+          <p>En collaboration avec les structures sanitaires, nous évoluons dans plusieurs spécialités.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-toggle="tab" href="#tab-1">Cardiology</a>
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">Cardiologie</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-2">Neurology</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-2">Neurologie</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-3">Hepatology</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-3">Hepatologie</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-4">Pediatrics</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-4">Pediatrie</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-5">Eye Care</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-5">Ophtalmologie</a>
               </li>
             </ul>
           </div>
@@ -394,9 +407,11 @@
               <div class="tab-pane active show" id="tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Cardiology</h3>
-                    <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                    <h3>Cardiologie</h3>
+                    <p class="font-italic">Qu'est-ce que la cardiologie</p>
+                    <p>La cardiologie (du grec καρδίᾱ kardiā, "cœur" et -λογία -logia, "étude") est une branche de la médecine qui traite des troubles du cœur ainsi que de certaines parties du système circulatoire. Le domaine comprend le diagnostic médical et le traitement des malformations cardiaques congénitales, des maladies coronariennes, de l'insuffisance cardiaque, des cardiopathies valvulaires et de l'électrophysiologie. Les médecins spécialisés dans ce domaine de la médecine sont appelés cardiologues. Les cardiologues pédiatres sont des pédiatres spécialisés en cardiologie. Les médecins spécialisés en chirurgie cardiaque sont appelés chirurgiens cardiothoraciques ou chirurgiens cardiaques, une spécialité de la chirurgie générale.
+
+                      Bien que le système cardiovasculaire soit inextricablement lié au sang, la cardiologie ne s'intéresse guère à l'hématologie ni à ses maladies.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{{url_for('static', filename='img/departments-1.jpg')}}" alt="" class="img-fluid">
@@ -406,9 +421,9 @@
               <div class="tab-pane" id="tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                    <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    <h3>Qu'est-ce que la neurologie?</h3>
+                    <!-- <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>La neurologie est la spécialité médicale clinique qui étudie l'ensemble des maladies du système nerveux et en particulier du cerveau. Cette spécialité médicale s'est séparée de la psychiatrie au xixe siècle avec l'école de Charcot à l'hôpital de la Pitié-Salpêtrière. Le terme de neurologie est introduit dans le vocabulaire médical par le médecin anatomiste anglais Thomas Willis. Le médecin spécialiste pratiquant la neurologie s'appelle le neurologue.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{{url_for('static', filename='img/departments-2.jpg')}}" alt="" class="img-fluid">
@@ -418,9 +433,13 @@
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="font-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                    <h3>Qu'est-ce que l'hépathologie?</h3>
+                    <!-- <p class="font-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p> -->
+                    <p>L'hépatologie est la branche de la médecine qui s'intéresse aux maladies hépatobiliaires, c'est-à-dire aux maladies du foie (hepar) et des voies biliaires et de la rate (Cf. hypersplénisme ou autres maladies de la rate liées au foie). Ces maladies peuvent avoir de nombreuses causes, infectieuse, tumorale, métabolique... ou être plurifactorielles. Le foie étant le principal organe de détoxication de l'organisme, toute dégradation importante de ses fonctions peut être associées à d'autres troubles graves de la santé (dysfonction rénale, troubles neurologiques induits, par une encéphalopathie hépatique par exemple).
+
+                      Le spécialiste se nomme l'« hépatologue » ; il aide à poser un diagnostic, préciser le cas échéant l'étiologie de la maladie et à proposer les soins nécessaires.
+                      
+                      Il peut être gastro-entérologue ou éventuellement spécialisé dans la chirurgie et l'anesthésie du foie et des organes associés.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{{url_for('static', filename='img/departments-3.jpg')}}" alt="" class="img-fluid">
@@ -430,9 +449,13 @@
               <div class="tab-pane" id="tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="font-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                    <h3>Qu'est-ce que la pédiatrie</h3>
+                    <!-- <p class="font-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p> -->
+                    <p>La pédiatrie est une branche spécialisée de la médecine qui étudie le développement psycho-moteur et physiologique normal de l'enfant, ainsi que toute la pathologie qui y a trait (maladies infantiles), de la naissance à la période postpubertaire où il devient adulte ; c'est la médecine des enfants, l'enfant étant défini en droit comme tout sujet âgé de moins de 18 ans (article 1er de la Convention relative aux droits de l'enfant). Le médecin spécialisé en pédiatrie s'appelle le pédiatre.
+
+                      La pédiatrie est différente de la médecine générale puisque s'adressant spécialement à un organisme en développement et en transformation permanente. La précocité du diagnostic est ici, encore plus qu'ailleurs, vitale pour la santé future de l'enfant et déterminante pour le pronostic.
+                      
+                      La néonatalogie est la partie de la pédiatrie qui s'occupe du nouveau-né. C'est la coopération entre le pédiatre et l'obstétricien qui permet de prévenir les malformations fœtales et de traiter des maladies à la naissance.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{{url_for('static', filename='img/departments-4.jpg')}}" alt="" class="img-fluid">
@@ -442,9 +465,9 @@
               <div class="tab-pane" id="tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                    <p class="font-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    <h3>Qu'est-ce que l'ophtalmologie?</h3>
+                    <!-- <p class="font-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p> -->
+                    <p>L’ophtalmologie est la branche de la médecine chargée du traitement des maladies de l’œil et de ses annexes. C’est une spécialité médico-chirurgicale. Le médecin spécialisé pratiquant l'ophtalmologie est appelé « ophtalmologiste » ou « ophtalmologue ».</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{{url_for('static', filename='img/departments-5.jpg')}}" alt="" class="img-fluid">
