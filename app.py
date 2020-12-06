@@ -1,7 +1,7 @@
 from flask import Flask, render_template, Response
 import face_recognition
 import cv2
-import cv2, numpy as np, glob
+import numpy as np
 import os
 
 
@@ -66,7 +66,7 @@ taggroupe = 'GROUPE :'
 
 known_face_names = [
     'Abdou Lahi Diop',
-    'Mouhamadou Gaye'
+    'Mouhamadou Gaye',
     "Mamadou Ciss"
 ]
 ages = [
@@ -183,7 +183,6 @@ def video_feed():
 
 @app.route('/')
 def index():
-    """Video streaming home page."""
     return render_template('index.html')
 
 @app.route('/stream')
