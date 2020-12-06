@@ -166,11 +166,11 @@ def gen_frames():  # generate frame by frame from camera
                 # Draw a label with a name below the face
                 cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
                 font = cv2.FONT_HERSHEY_DUPLEX
-                cv2.putText(frame, tagname+name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
+                cv2.putText(frame, tagname+name, (left + 6, bottom - 6), font, 0.5, (255, 255, 255), 1)
                 if name != 'Unknown':
-                    cv2.putText(frame, tagage+age, (left + 6, bottom + 50), font, 1.0, (255, 255, 255), 1)
-                    cv2.putText(frame, tagsexe+sexe, (left + 6, bottom + 100), font, 1.0, (255, 255, 255), 1)
-                    cv2.putText(frame, taggroupe+groupe, (left + 6, bottom + 150), font, 1.0, (255, 255, 255), 1)
+                    cv2.putText(frame, tagage+age, (left + 6, bottom + 25), font, 0.5, (255, 255, 255), 1)
+                    cv2.putText(frame, tagsexe+sexe, (left + 6, bottom + 50), font, 0.5, (255, 255, 255), 1)
+                    cv2.putText(frame, taggroupe+groupe, (left + 6, bottom + 75), font, 0.5, (255, 255, 255), 1)
 
 
             ret, buffer = cv2.imencode('.jpg', frame)
