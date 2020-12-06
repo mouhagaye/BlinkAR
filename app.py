@@ -188,7 +188,8 @@ def index():
 @app.route('/stream')
 def stream():
     """Video streaming home page."""
-    return render_template('stream.html')
+    contexte = {"image":"gaye.jpg"}
+    return render_template('stream.html',contexte=contexte)
 
 
 if __name__ == '__main__':
